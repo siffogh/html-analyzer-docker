@@ -54,6 +54,6 @@ Because I believe that Docker is Amazing. I chose to set up Docker manually beca
 ### Detecting a login form
 - The technique I used to detect a login form is very basic. I decided to detect a form in general due to the fact that login forms can be very different (some are handled by JavaScript directly, some are loaded dynamically, some have social login ...).
 
-## MUST DO :exclamation:
+## MUST DO :bangbang:
 
 * Both client and server should have ssl. (can be done through setting up nginx https proxies for both)..
