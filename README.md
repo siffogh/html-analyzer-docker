@@ -5,6 +5,11 @@ HTML Analyzer is a web-application that does some analysis of a web-page/URL.
 ## Demo
 * [Live Demo](live.htmlanalyzer.cloud)
 
+## Git History
+* [html-analyzer-client git history](https://github.com/siffogh/html-analyzer-client/commits/master)
+* [html-analyzer-server git history](https://github.com/siffogh/html-analyzer-server/commits/master)
+* [html-analyzer-docker git history](https://github.com/siffogh/html-analyzer-client/commits/master)
+
 ## Instructions to Run
 
 * Make sure you have Docker installed on your machine.
