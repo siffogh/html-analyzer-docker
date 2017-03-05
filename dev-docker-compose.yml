@@ -28,7 +28,7 @@ services:
         BUILD_ENV: dev
     container_name: dev-html-analyzer-client
     ports:
-      - "6082:80"
+      - "6082:3000"
     links:
       - dev-server:server
     restart: always

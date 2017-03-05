@@ -28,7 +28,7 @@ services:
         BUILD_ENV: prod
     container_name: html-analyzer-client
     ports:
-      - "9082:80"
+      - "9082:3000"
     links:
       - server
     restart: always
