@@ -1,0 +1,6 @@
+[submodule "html-analyzer-server"]
+	path = html-analyzer-server
+	url = https://github.com/siffogh/html-analyzer-server
+[submodule "html-analyzer-client"]
+	path = html-analyzer-client
+	url = https://github.com/siffogh/html-analyzer-client

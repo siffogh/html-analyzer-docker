@@ -1,0 +1,35 @@
+version: '2'
+
+services:
+  mongo:
+    image: mongo
+    container_name: mongo
+    ports:
+      - "27017"
+    restart: always
+    volumes:
+      - /data/mongo-volume:/data/db
+
+  server:
+    build: ./html-analyzer-server
+    container_name: html-analyzer-server
+    restart: always
+    ports:
+      - "9081:8000"
+    environment:
+      NODE_ENV: live
+    links:
+      - mongo
+
+  client:
+    build:
+      context: ./html-analyzer-client
+      args:
+        BUILD_ENV: live
+    container_name: html-analyzer-client
+    ports:
+      - "9082:80"
+    links:
+      - server
+    restart: always
+

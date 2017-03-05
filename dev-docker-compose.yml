@@ -1,0 +1,34 @@
+version: '2'
+
+services:
+  dev-mongo:
+    image: mongo
+    container_name: dev-mongo
+    ports:
+      - "27017"
+    restart: always
+    volumes:
+      - /data/dev-mongo-volume:/data/db
+
+  dev-server:
+    build: ./html-analyzer-server
+    container_name: dev-html-analyzer-server
+    restart: always
+    ports:
+      - "6081:8000"
+    environment:
+      NODE_ENV: dev
+    links:
+      - dev-mongo:mongo
+
+  dev-client:
+    build:
+      context: ./html-analyzer-client
+      args:
+        BUILD_ENV: dev
+    container_name: dev-html-analyzer-client
+    ports:
+      - "6082:80"
+    links:
+      - dev-server:server
+    restart: always
