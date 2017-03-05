@@ -1,6 +1,6 @@
 # HTML Analyzer
 
-HTML Analyzer is a web-application that does some analysis of a web-page/URL.
+![](https://raw.githubusercontent.com/siffogh/seif-gifs/master/demo.gif)
 
 ## Demo
 * [Live Demo](http://live.htmlanalyzer.cloud)
