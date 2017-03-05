@@ -17,7 +17,7 @@ services:
     ports:
       - "9081:8000"
     environment:
-      NODE_ENV: live
+      NODE_ENV: prod
     links:
       - mongo
 
@@ -25,7 +25,7 @@ services:
     build:
       context: ./html-analyzer-client
       args:
-        BUILD_ENV: live
+        BUILD_ENV: prod
     container_name: html-analyzer-client
     ports:
       - "9082:80"
