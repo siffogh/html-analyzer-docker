@@ -3,7 +3,7 @@
 HTML Analyzer is a web-application that does some analysis of a web-page/URL.
 
 ## Demo
-* [Live Demo](live.htmlanalyzer.cloud)
+* [Live Demo](http://live.htmlanalyzer.cloud)
 
 ## Git History
 * [html-analyzer-client git history](https://github.com/siffogh/html-analyzer-client/commits/master)
