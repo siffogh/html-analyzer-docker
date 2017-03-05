@@ -14,7 +14,7 @@ HTML Analyzer is a web-application that does some analysis of a web-page/URL.
 
 * Make sure you have Docker installed on your machine.
 * The app front-end can be viewed on the browser based on the environment (production or development).
-* The api can be tested by tools such as live.htmlanalyzer.cloud
+* The api can be tested by tools such as [Postman](https://www.getpostman.com/)
 
 ### Run in Development Mode
 * To run in development mode, execute the following script:
